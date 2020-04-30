@@ -18,7 +18,7 @@
 var Promise = require('q').Promise;
 var MockClock = require('../mock-clock');
 var parse = require('url').parse;
-const uuid4 = require('uuid/v4');
+const {v4: uuid4} = require('uuid');
 
 describe('index.js:', function() {
   var createClient, requestAndSucceed, requestAndFail, requestTimes, clock;
